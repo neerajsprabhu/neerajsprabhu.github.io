@@ -41,7 +41,7 @@
   <main id="main">
     <section id="portfolio-details" class="portfolio-details">
     <div class="container">
-              <h1>Accelerating Fully Homomorphic Encryption on UPMEM Up4</h1>
+              <h1>Accelerating Fully Homomorphic Encryption on UPMEM</h1>
 
               <h2>Summer Internship</h2>
               <ul>
@@ -51,13 +51,24 @@
               <p>
                 This project uses UPMEM to accelerate the various operations (addition, multiplication, key switching, rotation) 
                 involved in a fully homomorphic encryption (FHE) scheme. Some hardware characterization were first carried out to find out the bottlenecks 
-                in the process and on the basis of these statistics, the processes were accelerated using the near data processing machine, UPMEM.
+                in the process and on the basis of these statistics, the processes were accelerated using the near data processing machine, UPMEM PIM.
               </p>
               <p>
-                2. Fully Homomorphic Encryption
-                3. UPMEM
+                FHE is a cryptographic scheme which enables the user to perform operations directly on the ciphertext. This is highly valuable in cloud
+                computing where the client can encrypt the data and the computation can occur on the server side without any decryption. This reduces any
+                data leaks on the server. We are targetting the widely used CKKS scheme of FHE implemented using the Microsoft SEAL library because it can
+                be used to operate on real numbers instead of integers (as in the BFV scheme).
+              </p>
+              <p>
+                Our initial hardware characterizations showed that the operations in FHE are highly memory bound and would not be helped much by compute
+                acceleration. Hence, a near data processing machine such as UPMEM should help in accelerating the various processes. UPMEM PIM consists of 
+                DRAM Processing Units positioned within the DRAM memory chips and next to the data to drastically reduce off-chip data movements. This
+                improves performance for FHE (as it is memory intensive).
+              </p>
+              <p>
                 4. Final
               </p>
+              <img src="assets/img/projects/upmem.jpg">
     </div>
     </section>
 
