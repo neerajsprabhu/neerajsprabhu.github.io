@@ -63,10 +63,11 @@
                 Our initial hardware characterizations showed that the operations in FHE are highly memory bound and would not be helped much by compute
                 acceleration. Hence, a near data processing machine such as UPMEM should help in accelerating the various processes. UPMEM PIM consists of 
                 DRAM Processing Units positioned within the DRAM memory chips and next to the data to drastically reduce off-chip data movements. This
-                improves performance for FHE (as it is memory intensive).
+                improves performance for FHE as it is memory intensive.
               </p>
               <p>
-                4. Final
+                Hence, we are currently working on accelerating the individual operations in FHE and then expand this to major ML workloads and compute the
+                speedup achieved by offloading FHE to UPMEM PIM.
               </p>
               <img src="assets/img/projects/upmem.jpg">
     </div>

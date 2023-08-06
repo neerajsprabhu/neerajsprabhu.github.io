@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Accelerating Fully Homomorphic Encryption on UPMEM</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <main id="main">
+    <section id="portfolio-details" class="portfolio-details">
+    <div class="container">
+              <h1>Accelerating Fully Homomorphic Encryption on UPMEM</h1>
+
+              <h2>Summer Internship</h2>
+              <ul>
+                <li><strong>Guide</strong>: Prof. Rajeev Balasubramonian, University of Utah</li>
+                <li><strong>Duration</strong>: May 2023 - Present</li>
+              </ul>
+              <p>
+                This project uses UPMEM to accelerate the various operations (addition, multiplication, key switching, rotation) 
+                involved in a fully homomorphic encryption (FHE) scheme. Some hardware characterization were first carried out to find out the bottlenecks 
+                in the process and on the basis of these statistics, the processes were accelerated using the near data processing machine, UPMEM PIM.
+              </p>
+              <p>
+                FHE is a cryptographic scheme which enables the user to perform operations directly on the ciphertext. This is highly valuable in cloud
+                computing where the client can encrypt the data and the computation can occur on the server side without any decryption. This reduces any
+                data leaks on the server. We are targetting the widely used CKKS scheme of FHE implemented using the Microsoft SEAL library because it can
+                be used to operate on real numbers instead of integers (as in the BFV scheme).
+              </p>
+              <p>
+                Our initial hardware characterizations showed that the operations in FHE are highly memory bound and would not be helped much by compute
+                acceleration. Hence, a near data processing machine such as UPMEM should help in accelerating the various processes. UPMEM PIM consists of 
+                DRAM Processing Units positioned within the DRAM memory chips and next to the data to drastically reduce off-chip data movements. This
+                improves performance for FHE (as it is memory intensive).
+              </p>
+              <p>
+                4. Final
+              </p>
+              <img src="assets/img/projects/upmem.jpg">
+    </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
